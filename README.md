@@ -6,7 +6,6 @@ This work was done for a Masters level Machine Learning course.
 ## Introduction
 This repo contains only the source code for applying several machine learning algorithms on a binary classification task. The data is available here: https://www.datafiles.samhsa.gov/dataset/mental-health-client-level-data-2019-mh-cld-2019-ds0001. The first notebook cleans and prepares the data in a presentable format to be easily modeled. The second notebook contains all classifiers and their evaluations accompanied with charts/plots.
 
-(More information on the research can be found in the pdf MLtoPredictDepression)
 
 A common application of statistical learning techniques is to predict health outcomes using a range of healthcare specific data. This range tends to include demographic, socioeconomic, clinical, genomic data, etc. where researchers seek to gather enough information to build robust systems capable of predicting the onset of a mental illness such as depression. Clinical Depression is characterized as being a “more-severe form of depression, also known as major depression or major depressive disorder” (Hall-Flavin, 2017).
 

@@ -18,7 +18,7 @@ Implementing an automatic disease diagnosis detection application to accompany h
 
 The F2-score is used as the primary evaluation metric for all classifers. Essentially, the F2-score minimizes the number of False Negatives (Patients detected as not possessing a disease when in fact they do) by penalizing the Recall score. The first classifier trained and tested on the Mental Health Client-Level Dataset was a Decision Tree classifer without any fine-tuning or Grid parameter search. In terms of keeping the number of False Negatives to a minimum, the Decision Tree baseline outperformed a fine-tuned Logistic Regression model and a small neural network. The confusion matrix of the Decision Tree as evaluated by the F2-score is pictured below. 
 
-<img width="677" alt="Screen Shot 2021-12-13 at 9 54 46 PM" src="https://user-images.githubusercontent.com/63656931/145924637-b3ad468a-76f9-4d2f-89ed-d8f2ab87ac79.png">
+<img width="500" alt="Screen Shot 2021-12-13 at 9 54 46 PM" src="https://user-images.githubusercontent.com/63656931/145924637-b3ad468a-76f9-4d2f-89ed-d8f2ab87ac79.png">
 
 
 

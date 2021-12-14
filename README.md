@@ -1,7 +1,6 @@
 # Supervised-Learning-HealthcareData
 ML to predict Mental Health disease diagnosis 
 
-This work was done for a Masters level Machine Learning course. 
 
 ## Introduction
 This repo contains only the source code for applying several machine learning algorithms on a binary classification task. The data is available here: https://www.datafiles.samhsa.gov/dataset/mental-health-client-level-data-2019-mh-cld-2019-ds0001. The first notebook cleans and prepares the data in a presentable format to be easily modeled. The second notebook contains all classifiers and their evaluations accompanied with charts/plots.
@@ -15,3 +14,10 @@ The data contains slightly more than 6 million data points (each representative 
 Preprocessing the data began with truncating the original dataset of more than 6 million rows down to 100,000 rows. We then divide the dataset into 4 subsets. Each subset is divided based on similar characteristics amongst groups of features. Features take on several variable formats. Briefly, columns such as GENDER and VETERAN are binary encoded. Whereas columns like EDUC (education) are ordinal. This means preserving the order of observations is crucial to the data the variable represents. Missing data is accounted for by the original reviewers of the data where missing points were substituted with the value -9. Depending on the data type for a given column (categorical or numerical), missing data was either dropped altogether or replaced with a unique missing token. Visualizing the data required converting the numerical values of the ordinal columns to their string format representation in order to provide important clarity. 
 
 ## Results
+Implementing an automatic disease diagnosis detection application to accompany healthcare workers can only effectively work if the application is able to identify when a patient actually presents with a disease. Otherwise, missed diagnoses will only make the situation worse for the patient. The primary mission becomes increasing the number of correct disease detections while safely allowing for some false positives. Having a patient seek treatment due to a disease diagnosis is preferable over a patient not seeking treatment at all when in fact they are ill. 
+
+The F2-score is used as the primary evaluation metric for all classifers. Essentially, the F2-score minimizes the number of False Negatives (Patients detected as not possessing a disease when in fact they do) by penalizing the Recall score. The confusion matrix of the best classifer as evaluated by the F2-score (84.2) is pictured below. With more fine-tuning, 
+### Best Logistic Regression model performance
+
+
+
